@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.uno {
+  width: 200px;
+  height: 200px;
+
+  border: 1px solid #333333;
+
+  
+  /* distanziare l'elemento di xx pixel
+  rispetto al prossimo elemento */
+  margin-bottom: 50px;
+}
+
+.due {
+  width: 200px;
+  height: 200px;
+
+  /* border: 1px solid rgba(0, 0, 0, 0); */
+  
+
+  background-color: #eee;
+  /* distanziare l'elemento di xx pixel
+  rispetto al precedente elemento */
+  margin-top: 50px;
+
+}
+
+
+.due .due-figlio {
+  background-color: rgba(255, 0, 0, .2);
+
+  /* se il genitore non ha border */
+  /* margin-top: 50px; */
+}
