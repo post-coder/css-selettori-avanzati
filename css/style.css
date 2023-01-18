@@ -1,0 +1,104 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  padding: 20px;
+
+  padding-bottom: 1000px;
+}
+
+nav {
+
+}
+
+#nav {
+
+}
+
+/* AND: elemento con tag X e anche classe Y */
+nav.red {
+
+}
+
+
+/* seleziona il PRIMO FIGLIO del genitore che risponde al tag/classe/id che abbiamo indicato */
+nav ul li:first-child {
+  /* color: red; */
+}
+
+/* seleziona l'ULTIMO FIGLIO del genitore che risponde al tag/classe/id che abbiamo indicato */
+nav ul li:last-child {
+  color: blue;
+}
+
+
+/* seleziona il PRIMO ELEMENTO DEL TIPO SPECIFICATO all'interno del genitore */
+#header p:first-of-type {
+  /* color: red; */
+}
+
+/* selezione per attributo */
+input[type="password"] {
+  color: red;
+}
+
+a[target="_blank"] {
+  font-weight: bold;
+}
+
+
+#header *:hover {
+  /* background-color: aqua; */
+
+  /* cursor: pointer; */
+}
+
+/* con il ::before possiamo inserire elementi in pagina, PRIMA del bersaglio del selettore */
+#header h2::before {
+  /* proprietà obbligatoria */
+  content: '\2713  ';
+  /* fine proprietà obbligatoria */
+
+  color: green
+}
+
+/* con ::after possiamo inserire elementi in pagina, DOPO del bersaglio del selettore */
+#header h2::after {
+  /* proprietà obbligatoria */
+  content: '.';
+  /* fine proprietà obbligatoria */
+
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* seleziona gli elementi p che sono IMMEDIATAMENTE SUCCESSIVI all'elemento H2 */
+h2 + p {
+  /* color: red; */
+}
+
+/* selettore di parentela diretta: seleziona solo gli elementi <p> che sono parenti diretti di #header */
+#header > strong {
+  color: red;
+}
+
+
+/* questo selettore seleziona tutti gli elementi button che abbiano l'attributo "class" che INIZI con i caratteri specificati*/
+button[class^="btn"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+
+.btn-secondary {
+  background-color: yellow;
+  color: black;
+}
